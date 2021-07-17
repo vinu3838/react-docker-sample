@@ -6,8 +6,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t react-docker -f Dockerfile.dev .
+  - docker build -t vinu3838/react-docker -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true vinu3838/react-docker npm run test
 
